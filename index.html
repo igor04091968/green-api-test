@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN-API Test</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2300a85a'/%3E%3Cpath d='M18 21h28v6H24v10h18v6H24v10h-6V21Z' fill='white'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="page">
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">GREEN-API</p>
+        <h1>Тестовое задание</h1>
+        <p class="hero-text">
+          HTML-страница для проверки методов <code>getSettings</code>, <code>getStateInstance</code>,
+          <code>sendMessage</code> и <code>sendFileByUrl</code>.
+        </p>
+      </div>
+      <div class="hero-note">
+        <p>Укажите параметры инстанса, затем вызывайте методы и смотрите ответы API в JSON-формате.</p>
+      </div>
+    </section>
+
+    <div class="layout">
+      <section class="controls">
+        <article class="card">
+          <h2>Подключение</h2>
+          <div class="fields two-columns">
+            <label class="field">
+              <span>ID Instance</span>
+              <input id="idInstance" name="idInstance" type="text" placeholder="1101000001" autocomplete="off">
+            </label>
+            <label class="field">
+              <span>API Token Instance</span>
+              <input id="apiTokenInstance" name="apiTokenInstance" type="password" placeholder="f6d1..." autocomplete="off">
+            </label>
+          </div>
+          <p class="hint">Базовый URL: <code>https://api.green-api.com</code></p>
+          <div class="button-row">
+            <button type="button" class="button button-primary" data-action="getSettings">getSettings</button>
+            <button type="button" class="button button-secondary" data-action="getStateInstance">getStateInstance</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Отправка сообщения</h2>
+          <div class="fields">
+            <label class="field">
+              <span>Chat ID</span>
+              <input id="messageChatId" name="messageChatId" type="text" placeholder="79991234567@c.us" autocomplete="off">
+            </label>
+            <label class="field">
+              <span>Сообщение</span>
+              <textarea id="messageText" name="messageText" rows="5" placeholder="I use Green-API to send this message to you!"></textarea>
+            </label>
+          </div>
+          <div class="button-row">
+            <button type="button" class="button button-primary" data-action="sendMessage">sendMessage</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Отправка файла по URL</h2>
+          <div class="fields">
+            <label class="field">
+              <span>Chat ID</span>
+              <input id="fileChatId" name="fileChatId" type="text" placeholder="79991234567@c.us" autocomplete="off">
+            </label>
+            <label class="field">
+              <span>URL файла</span>
+              <input id="fileUrl" name="fileUrl" type="url" placeholder="https://example.com/file.png" autocomplete="off">
+            </label>
+            <div class="fields two-columns">
+              <label class="field">
+                <span>Имя файла</span>
+                <input id="fileName" name="fileName" type="text" placeholder="file.png" autocomplete="off">
+              </label>
+              <label class="field">
+                <span>Подпись</span>
+                <input id="fileCaption" name="fileCaption" type="text" placeholder="Файл из тестового задания" autocomplete="off">
+              </label>
+            </div>
+          </div>
+          <div class="button-row">
+            <button type="button" class="button button-primary" data-action="sendFileByUrl">sendFileByUrl</button>
+          </div>
+        </article>
+      </section>
+
+      <aside class="card output-card">
+        <div class="output-header">
+          <div>
+            <p class="eyebrow">Ответ API</p>
+            <h2>Результат запроса</h2>
+          </div>
+          <button type="button" class="button button-ghost" id="clearOutput">Очистить</button>
+        </div>
+        <label class="field">
+          <span>JSON output</span>
+          <textarea id="responseOutput" name="responseOutput" rows="28" readonly placeholder="Здесь появится ответ GREEN-API"></textarea>
+        </label>
+        <div class="status-bar">
+          <span id="statusText">Готово к работе</span>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
