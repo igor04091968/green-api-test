@@ -25,3 +25,9 @@ python3 -m http.server 8080
 После этого страница будет доступна по адресу:
 
 `http://localhost:8080`
+
+## Public resume links
+- Base HTML: https://igor04091968.github.io/green-api-test/resume.html
+- Base PDF: https://igor04091968.github.io/green-api-test/igor_resume_green_api.pdf
+- Senior HTML: https://igor04091968.github.io/green-api-test/resume-senior.html
+- Senior PDF: https://igor04091968.github.io/green-api-test/igor_resume_senior.pdf
