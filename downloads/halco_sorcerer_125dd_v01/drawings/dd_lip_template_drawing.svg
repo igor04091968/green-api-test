@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="30" y="36" font-family="Arial" font-size="24">DD lip cut template — 2 mm polycarbonate</text>
+  <text x="30" y="63" font-family="Arial" font-size="15">Print 1:1 or cut from SVG; line tie hole is a starting point, tune after water test.</text>
+  <polygon points="145,210 205,132 370,151 520,171 570,210 520,249 370,269 205,288" fill="#eeeeee" stroke="black" stroke-width="2.5"/>
+  <circle cx="447" cy="210" r="13" fill="white" stroke="black" stroke-width="2"/>
+  <text x="462" y="215" font-family="Arial" font-size="15">line tie hole</text>
+  <line x1="145" y1="315" x2="570" y2="315" stroke="black"/>
+  <line x1="145" y1="310" x2="145" y2="320" stroke="black"/>
+  <line x1="570" y1="310" x2="570" y2="320" stroke="black"/>
+  <text x="315" y="340" font-family="Arial" font-size="16">about 54 mm</text>
+  <line x1="205" y1="116" x2="205" y2="304" stroke="black"/>
+  <line x1="196" y1="132" x2="214" y2="132" stroke="black"/>
+  <line x1="196" y1="288" x2="214" y2="288" stroke="black"/>
+  <text x="218" y="117" font-family="Arial" font-size="16">about 25–26 mm</text>
+  <text x="30" y="385" font-family="Arial" font-size="15">Material: polycarbonate 2 mm. Do not rely on printed PETG lip for real trolling loads.</text>
+</svg>
