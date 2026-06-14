@@ -1,0 +1,32 @@
+name: Build Halco Sorcerer 125DD ZIP
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'downloads/halco_sorcerer_125dd_v01/generate_halco_sorcerer_125dd_zip.py'
+      - '.github/workflows/build-halco-sorcerer-125dd-v01.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Generate ZIP
+        run: |
+          cd downloads/halco_sorcerer_125dd_v01
+          python3 generate_halco_sorcerer_125dd_zip.py
+      - name: Commit generated ZIP
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add downloads/halco_sorcerer_125dd_v01/Halco_Sorcerer_125DD_Bambu_v01.zip
+          git diff --cached --quiet && exit 0
+          git commit -m "Add generated Halco Sorcerer 125DD ZIP"
+          git push
