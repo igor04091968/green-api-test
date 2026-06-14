@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+  <rect width="100%" height="100%" fill="white"/>
+  <text x="30" y="34" font-family="Arial" font-size="24">Sorcerer 125 DD style — side profile</text>
+  <text x="30" y="62" font-family="Arial" font-size="15">Concept drawing for printable trolling lure body; not an official Halco model.</text>
+  <line x1="80" y1="275" x2="705" y2="275" stroke="black" stroke-width="1.5"/>
+  <line x1="80" y1="270" x2="80" y2="282" stroke="black"/>
+  <line x1="705" y1="270" x2="705" y2="282" stroke="black"/>
+  <text x="342" y="298" font-family="Arial" font-size="16">body 125 mm</text>
+  <path d="M80,180 C115,128 186,112 270,123 C382,135 524,136 642,153 C686,160 710,174 705,188 C690,204 640,214 560,214 C440,218 300,215 180,205 C122,200 90,192 80,180 Z" fill="#f6f6f6" stroke="black" stroke-width="2"/>
+  <path d="M101,179 C145,156 225,150 326,154 C452,158 582,166 686,185" fill="none" stroke="#777" stroke-width="1.2" stroke-dasharray="7 5"/>
+  <polygon points="70,177 5,132 38,242" fill="#eeeeee" stroke="black" stroke-width="2"/>
+  <circle cx="42" cy="181" r="6" fill="white" stroke="black" stroke-width="2"/>
+  <text x="16" y="116" font-family="Arial" font-size="15">DD lip, 2 mm PC</text>
+  <text x="23" y="260" font-family="Arial" font-size="14">line tie in lip</text>
+  <circle cx="257" cy="208" r="5" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="470" cy="215" r="5" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="700" cy="186" r="5" fill="white" stroke="black" stroke-width="2"/>
+  <line x1="42" y1="181" x2="700" y2="186" stroke="#444" stroke-width="2" stroke-dasharray="10 5"/>
+  <text x="230" y="238" font-family="Arial" font-size="14">hook eye 1: 40–45 mm</text>
+  <text x="438" y="246" font-family="Arial" font-size="14">hook eye 2: 82–88 mm</text>
+  <text x="525" y="114" font-family="Arial" font-size="14">through-wire 1.0–1.2 mm</text>
+  <rect x="210" y="188" width="110" height="14" rx="7" fill="#dddddd" stroke="#555"/>
+  <text x="213" y="184" font-family="Arial" font-size="14">ballast 3–6 g</text>
+  <text x="720" y="187" font-family="Arial" font-size="14">tail eye</text>
+</svg>
